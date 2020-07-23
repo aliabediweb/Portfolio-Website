@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+  	height: 100%;
+	background-image: url("main_page_images/bg_img.png");
+	background-attachment: fixed;
+}
+
+body {
+	width: 85%;
+	margin: 20px auto 20px auto;
+	border: 5px solid black;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+#header {
+	height: 4%;
+	padding-left: 50px;
+	padding-top: 30px;
+	/*background-color: #402759;*/
+	background-image: linear-gradient(to right, #402759, black);
+	color: #E4DCf1;
+	font-size: 40px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+#header_2 {
+	height: 0.5%;
+	padding-left: 50px;
+	padding-top: 30px;
+	/*background-color: #402759;*/
+	background-image: linear-gradient(to right, #402759, black);
+	color: #E4DCf1;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+
+#header_3 {
+	height: 4%;
+	padding-left: 50px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	/*background-color: #402759;*/
+	background-image: linear-gradient(to right, #402759, black);
+	color: #E4DCf1;
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
+h3, p {
+	color: #E4DCf1; 
+}
+
+.text {
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: left;
+}
+
+.iPhone {
+	font-size: 75%;
+	font-style: italic;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+ul {
+	text-align: left;
+	margin-left: 10%;
+}
+
+.inline_p {
+	display: inline;
+}
+
+/* Style tab links */
+.tablink {
+	width: 25%;
+  	background-color: #555;
+  	color: #E4DCf1;
+  	letter-spacing: 2px;
+  	float: left;
+	padding: 15px 0px;
+  	border: none;
+  	outline: none;
+  	cursor: pointer;
+}
+
+.tablink:hover {
+  	background-color: #777;
+	border: 1px solid #E4DCf1;
+	font-weight: bold;
+	
+}
+
+.tablink:active {
+  	background-color: black;
+	border: 1px solid #E4DCf1;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  	color: #E4DCf1;
+  	display: none;
+  	padding-top: 50px;
+  	margin: auto;
+  	text-align: center;
+}
+
+#Home {background-color: #402759;}
+#Portfolio {background-color: #402759;}
+#Resume {background-color: #402759;}
+#Contact {background-color: #402759;}
+
+.project_link, .project_link:visited {
+	color: cyan;
+}
+.project_link:hover {
+	color: white;
+}
+.project_link:active{
+	color: red;
+}
+
+.resume_img {
+	width: 80%;
+	border: 2px solid white;
+	margin: 20px 0px 10px 0px;
+}
+
+.me {
+	width: 20%;
+	border: 2px solid white;
+	margin: 20px 0px 10px 0px;
+}
+
+.footer {
+	margin-bottom: 0px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	font-size: 0.7em;
+	font-weight: bold;
+}
+
+/* If the screen size is 601px wide or more, large font for menu text */
+@media screen and (min-width: 801px) {
+  .tablink {
+    font-size: 15px;
+  }
+}
+
+/* If the screen size is 600px wide or less, small text for meun text */
+@media screen and (max-width: 800px) {
+  .tablink {
+    font-size: 10px;
+  }
+}
+
+hr {
+	border: 0.5px solid #E4DCf1;
+}
+
+
+
+/*------------ Copyright © Ali Abedi [May 2020] ------------>*/
