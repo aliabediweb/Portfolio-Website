@@ -18,7 +18,6 @@ body {
 	height: 4%;
 	padding-left: 50px;
 	padding-top: 30px;
-	/*background-color: #402759;*/
 	background-image: linear-gradient(to right, #402759, black);
 	color: #E4DCf1;
 	font-size: 40px;
@@ -30,7 +29,6 @@ body {
 	height: 0.5%;
 	padding-left: 50px;
 	padding-top: 30px;
-	/*background-color: #402759;*/
 	background-image: linear-gradient(to right, #402759, black);
 	color: #E4DCf1;
 	font-size: 25px;
@@ -43,7 +41,6 @@ body {
 	padding-left: 50px;
 	padding-top: 30px;
 	padding-bottom: 10px;
-	/*background-color: #402759;*/
 	background-image: linear-gradient(to right, #402759, black);
 	color: #E4DCf1;
 	font-size: 15px;
@@ -54,22 +51,33 @@ h3, p {
 	color: #E4DCf1; 
 }
 
+.next_project {
+	margin-top: 75px;
+}
+
 .text {
 	margin-left: 10%;
 	margin-right: 10%;
 	text-align: left;
 }
 
-.iPhone {
-	font-size: 75%;
-	font-style: italic;
-	margin-left: 15%;
-	margin-right: 15%;
+ul {
+	text-align: center;
+	list-style-type: none;
+	margin: 20px auto;
+	padding: 0px;
 }
 
-ul {
-	text-align: left;
-	margin-left: 10%;
+li {
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	background-color: cyan;
+	color: black;
+	margin: 15px auto;
+	padding: 10px 0px;
+	border: 2px solid black;
+	border-radius: 10px;
+	width: 250px;
 }
 
 .inline_p {
@@ -116,13 +124,26 @@ ul {
 #Contact {background-color: #402759;}
 
 .project_link, .project_link:visited {
-	color: cyan;
+	display: inline-block;
+	background-color: cyan;
+	color: black;
+	text-decoration: none;
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 10px;
+	width: 200px;
+	margin: 0px 15px;
 }
+
 .project_link:hover {
+	background-color: black;
 	color: white;
+	border: 2px solid white;
 }
+
 .project_link:active{
-	color: red;
+	color: orange;
+	border: 2px solid orange;
 }
 
 .resume_img {
