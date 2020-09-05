@@ -52,7 +52,7 @@ h3, p {
 }
 
 .next_project {
-	margin-top: 75px;
+	margin-top: 20px;
 }
 
 .text {
@@ -84,7 +84,6 @@ li {
 	display: inline;
 }
 
-/* Style tab links */
 .tablink {
 	width: 25%;
   	background-color: #555;
@@ -109,7 +108,6 @@ li {
 	border: 1px solid #E4DCf1;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   	color: #E4DCf1;
   	display: none;
@@ -132,7 +130,7 @@ li {
 	border: 2px solid black;
 	border-radius: 10px;
 	width: 200px;
-	margin: 0px 15px;
+	margin: 2px 15px;
 }
 
 .project_link:hover {
@@ -149,13 +147,36 @@ li {
 .resume_img {
 	width: 80%;
 	border: 2px solid white;
-	margin: 20px 0px 10px 0px;
+	margin: 15px 0px 10px 0px;
+}
+
+.contact_link, .contact_link:visited {
+	display: block;
+	background-color: cyan;
+	color: black;
+	text-decoration: none;
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 10px;
+	width: 200px;
+	margin: 20px auto;
+}
+
+.contact_link:hover {
+	background-color: black;
+	color: white;
+	border: 2px solid white;
+}
+
+.contact_link:active{
+	color: orange;
+	border: 2px solid orange;
 }
 
 .me {
-	width: 20%;
+	width: 300px;
 	border: 2px solid white;
-	margin: 20px 0px 10px 0px;
+	margin: 0px 0px 10px 0px;
 }
 
 .footer {
@@ -165,6 +186,16 @@ li {
 	color: white;
 	font-size: 0.7em;
 	font-weight: bold;
+}
+
+hr {
+	border: 0.5px solid #E4DCf1;
+}
+
+hr.portfolio_div {
+	border: 0.3px dashed #E4DCf1;
+	width: 90%;
+	margin-top: 50px;
 }
 
 /* If the screen size is 601px wide or more, large font for menu text */
@@ -179,10 +210,6 @@ li {
   .tablink {
     font-size: 10px;
   }
-}
-
-hr {
-	border: 0.5px solid #E4DCf1;
 }
 
 
