@@ -175,12 +175,15 @@ li {
 }
 
 hr {
-	border-top: : 3px solid #E4DCf1;
+	border-top: 2px solid #E4DCf1;
+	border-bottom: 0px;
+	border-right: 0px;
+	border-left: 0px;
 }
 
 hr.portfolio_div {
-	border: 0;
-    height: 2px;
+	border: 0px;
+    height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #E4DCf1, rgba(0, 0, 0, 0));
 	width: 90%;
 	margin-top: 50px;
