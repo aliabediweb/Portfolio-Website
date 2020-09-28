@@ -17,15 +17,15 @@
 	<div id="header_3">Responsive | Dynamic | Interactive</div>
 	
 	<div class="nav">
-		<button class="tablink" onclick="openPage('Home', this, '')" id="defaultOpen">HOME</button>
-		<button class="tablink" onclick="openPage('Portfolio', this, '')">PORTFOLIO</button>
-		<button class="tablink" onclick="openPage('Contact', this, '')">CONTACT</button>
+		<button class="tablink" onclick="openPage('Home', this, '', 'bold')" id="defaultOpen">HOME</button>
+		<button class="tablink" onclick="openPage('Portfolio', this, '', 'bold')">PORTFOLIO</button>
+		<button class="tablink" onclick="openPage('Contact', this, '', 'bold')">CONTACT</button>
 	</div>
 
 	<div id="Home" class="tabcontent">
 	  		<p class="text">I am a creative full-stack web developer with 2+ years of experience. My websites lay out information in an aesthetic manner while also being responsive and accessible from any type of device. I am skilled in all stages of web development which include conceptualizing, designing, developing, and launching. My code is clean and easy to read, with my latest work being pushed to my GitHub repositories.</p>
 			<p class="text">I have a degree in Engineering from Michigan State University. I have also completed a full-stack web development coding bootcamp and have experience using various web development tools to create dynamic and interactive web pages.</p>
-			<p class="text">The web development softwares I use to create my websites:</p>
+			<p class="text">The softwares and tools I use to create my websites:</p>
 			<ul>
 				<li>HTML</li>
 				<li>CSS</li>
@@ -40,7 +40,7 @@
 				<li>Adobe Creative Cloud</li>
 				<li>Git | GitHub | Git Bash</li>
 			</ul>
-			<p class="text">My most recent projects can be found under the Portfolio tab. Details about my work experience, education, and skills can be found under the Resume tab. The Contact tab contains information on how to reach out to me. Thank you for visiting!</p>
+			<p class="text">My most recent projects can be found under 'Portfolio' and 'Contact' contains information on how to reach out to me. Thank you for visiting!</p>
 		<hr/>
 			<p class="footer">Copyright © Ali Abedi [August 2020]</p>
 	</div>
@@ -78,8 +78,6 @@
 			<a class="contact_link">(313) 953-4383</a>
 			<a class="contact_link" target="_blank" href="https://www.github.com/aliabediweb">GitHub</a>
 			<a class="contact_link" target="_blank" href="https://www.linkedin.com/in/ali-abedi3">LinkedIn</a>
-			<br/>	
-			<img class="me" src="main_page_images/me.jpg" alt="me">
 		<hr/>
 			<p class="footer">Copyright © Ali Abedi [August 2020]</p>
 	</div>
@@ -87,7 +85,7 @@
 	
 	<script>
 		
-	function openPage(pageName, elmnt, color) {
+	function openPage(pageName, elmnt, color, font) {
 	  // Hide all elements with class="tabcontent" by default */
 	  var i, tabcontent, tablinks;
 	  tabcontent = document.getElementsByClassName("tabcontent");
@@ -99,6 +97,7 @@
 	  tablinks = document.getElementsByClassName("tablink");
 	  for (i = 0; i < tablinks.length; i++) {
 		tablinks[i].style.backgroundColor = "";
+		tablinks[i].style.fontWeight = "normal";
 	  }
 
 	  // Show the specific tab content
@@ -106,6 +105,7 @@
 
 	  // Add the specific color to the button used to open the tab content
 	  elmnt.style.backgroundColor = color;
+	  elmnt.style.fontWeight = font;
 	}
 
 	// Get the element with id="defaultOpen" and click on it

@@ -91,6 +91,7 @@ li {
 }
 
 .tablink {
+	width: 30%;
 	flex-grow: 1;
   	background-color: transparent;
   	color: #E4DCf1;
@@ -133,7 +134,7 @@ li {
 .project_link:hover {
 	background-color: black;
 	color: white;
-	border: 2px solid white;
+	border: 2px solid #E4DCf1;
 }
 
 .project_link:active{
@@ -156,7 +157,7 @@ li {
 .contact_link:hover {
 	background-color: black;
 	color: white;
-	border: 2px solid white;
+	border: 2px solid #E4DCf1;
 }
 
 .contact_link:active{
@@ -164,29 +165,23 @@ li {
 	border: 2px solid orange;
 }
 
-.me {
-	width: 250px;
-	border: 2px solid white;
-	margin: 0px 0px 10px 0px;
-}
-
 .footer {
 	margin-bottom: 0px;
 	padding-bottom: 10px;
 	text-align: center;
-	color: white;
+	color: #E4DCf1;
 	font-size: 0.7em;
 	font-weight: bold;
 }
 
 hr {
-	border-top: 2px solid #E4DCf1;
-	border-bottom: none;
+	border-top: : 3px solid #E4DCf1;
 }
 
 hr.portfolio_div {
-	border-top: : 1px solid #E4DCf1;
-	border-bottom: none;
+	border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #E4DCf1, rgba(0, 0, 0, 0));
 	width: 90%;
 	margin-top: 50px;
 }
