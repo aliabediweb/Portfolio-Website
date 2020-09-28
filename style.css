@@ -84,9 +84,15 @@ li {
 	display: inline;
 }
 
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 .tablink {
-	width: 25%;
-  	background-color: #555;
+	flex-grow: 1;
+  	background-color: transparent;
   	color: #E4DCf1;
   	letter-spacing: 2px;
   	float: left;
@@ -96,29 +102,20 @@ li {
   	cursor: pointer;
 }
 
-.tablink:hover {
-  	background-color: #777;
-	border: 1px solid #E4DCf1;
+.tablink:hover, .tablink:active {
 	font-weight: bold;
-	
-}
-
-.tablink:active {
-  	background-color: black;
-	border: 1px solid #E4DCf1;
 }
 
 .tabcontent {
   	color: #E4DCf1;
   	display: none;
-  	padding-top: 50px;
+  	padding-top: 30px;
   	margin: auto;
   	text-align: center;
 }
 
 #Home {background-color: #402759;}
 #Portfolio {background-color: #402759;}
-#Resume {background-color: #402759;}
 #Contact {background-color: #402759;}
 
 .project_link, .project_link:visited {
@@ -142,12 +139,6 @@ li {
 .project_link:active{
 	color: orange;
 	border: 2px solid orange;
-}
-
-.resume_img {
-	width: 80%;
-	border: 2px solid white;
-	margin: 15px 0px 10px 0px;
 }
 
 .contact_link, .contact_link:visited {
@@ -189,11 +180,13 @@ li {
 }
 
 hr {
-	border: 0.5px solid #E4DCf1;
+	border-top: 2px solid #E4DCf1;
+	border-bottom: none;
 }
 
 hr.portfolio_div {
-	border: 0.3px dashed #E4DCf1;
+	border-top: : 1px solid #E4DCf1;
+	border-bottom: none;
 	width: 90%;
 	margin-top: 50px;
 }
