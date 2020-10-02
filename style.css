@@ -61,6 +61,20 @@ h3, p {
 	text-align: left;
 }
 
+@keyframes skills {
+	0%	{background-color: cyan;}
+  	25% {background-color: black;
+  		color: orange;
+  		border: 2px solid orange;
+  		}
+  	50% {background-color: black;
+  		color: orange;
+  		border: 2px solid orange;
+  		}
+  	100%{background-color: cyan;}
+
+}
+
 ul {
 	text-align: center;
 	list-style-type: none;
@@ -78,6 +92,47 @@ li {
 	border: 2px solid black;
 	border-radius: 10px;
 	width: 250px;
+	animation-name: skills;
+	animation-duration: 24s;
+	animation-iteration-count: infinite;
+}
+
+/* Animate skills */
+#skill1 {
+	animation-delay: 0s;
+}
+#skill2 {
+	animation-delay: 1s;
+}
+#skill3 {
+	animation-delay: 2s;
+}
+#skill4 {
+	animation-delay: 3s;
+}
+#skill5 {
+	animation-delay: 4s;
+}
+#skill6 {
+	animation-delay: 5s;
+}
+#skill7 {
+	animation-delay: 6s;
+}
+#skill8 {
+	animation-delay: 7s;
+}
+#skill9 {
+	animation-delay: 8s;
+}
+#skill10 {
+	animation-delay: 9s;
+}
+#skill11 {
+	animation-delay: 10s;
+}
+#skill12 {
+	animation-delay: 11s;
 }
 
 .inline_p {
@@ -116,9 +171,9 @@ li {
   	text-align: center;
 }
 
-#Home {background-color: #402759;}
-#Portfolio {background-color: #402759;}
-#Contact {background-color: #402759;}
+#Home {background-color: #402759; background-image: url("main_page_images/crissxcross.png");}
+#Portfolio {background-color: #402759; background-image: url("main_page_images/crissxcross.png");}
+#Contact {background-color: #402759; background-image: url("main_page_images/crissxcross.png");}
 
 .project_link, .project_link:visited {
 	display: inline-block;
