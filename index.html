@@ -23,8 +23,8 @@
 	</div>
 
 	<div id="Home" class="tabcontent">
-	  		<p class="text">I am a creative full-stack web developer with 2+ years of experience. My websites lay out information in an aesthetic manner while also being responsive and accessible from any type of device. I am skilled in all stages of web development which include conceptualizing, designing, developing, and launching. My code is clean and easy to read, with my latest work being pushed to my GitHub repositories.</p>
-			<p class="text">I have a degree in Engineering from Michigan State University. I have also completed a full-stack web development coding bootcamp and have experience using various web development tools to create dynamic and interactive web pages.</p>
+	  		<p class="text">I am a creative full-stack web developer skilled in all stages of web development which include conceptualizing, designing, developing, and launching.</p>
+			<p class="text">Whether you are an individual looking to gain an online presence or a business in need of a professional website, I have a solution that can help you reach your goals.</p>
 			<p class="text">The softwares and tools I use to create my websites:</p>
 			<ul>
 				<li>HTML</li>
@@ -40,7 +40,7 @@
 				<li>Adobe Creative Cloud</li>
 				<li>Git | GitHub | Git Bash</li>
 			</ul>
-			<p class="text">My most recent projects can be found under 'Portfolio' and 'Contact' contains information on how to reach out to me. Thank you for visiting!</p>
+			<p class="text">My most recent projects can be found under 'Portfolio' while 'Contact' contains information on how to reach out to me. Thank you for visiting!</p>
 		<hr/>
 			<p class="footer">Copyright © Ali Abedi [August 2020]</p>
 	</div>
@@ -75,8 +75,8 @@
 	</div>
 
 	<div id="Contact" class="tabcontent">
-			<a class="contact_link">aliabediweb@outlook.com</a>
-			<a class="contact_link">(313) 953-4383</a>
+			<a onclick="email_show()" id="email_btn" class="contact_link">Email</a>
+			<a onclick="phone_show()" id="phone_btn"class="contact_link">Phone</a>
 			<a class="contact_link" target="_blank" href="https://www.github.com/aliabediweb">GitHub</a>
 			<a class="contact_link" target="_blank" href="https://www.linkedin.com/in/ali-abedi3">LinkedIn</a>
 		<hr/>
@@ -86,31 +86,42 @@
 	
 	<script>
 		
-	function openPage(pageName, elmnt, color, font) {
-	  // Hide all elements with class="tabcontent" by default */
-	  var i, tabcontent, tablinks;
-	  tabcontent = document.getElementsByClassName("tabcontent");
-	  for (i = 0; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = "none";
-	  }
+		function openPage(pageName, elmnt, color, font) {
+	  		// Hide all elements with class="tabcontent" by default */
+	  		var i, tabcontent, tablinks;
+	  		tabcontent = document.getElementsByClassName("tabcontent");
+	  		for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+	  		}
 
-	  // Remove the background color of all tablinks/buttons
-	  tablinks = document.getElementsByClassName("tablink");
-	  for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].style.backgroundColor = "";
-		tablinks[i].style.fontWeight = "normal";
-	  }
+			// Remove the background color of all tablinks/buttons
+			tablinks = document.getElementsByClassName("tablink");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].style.backgroundColor = "";
+				tablinks[i].style.fontWeight = "normal";
+			}
 
-	  // Show the specific tab content
-	  document.getElementById(pageName).style.display = "block";
+	  		// Show the specific tab content
+	  		document.getElementById(pageName).style.display = "block";
 
-	  // Add the specific color to the button used to open the tab content
-	  elmnt.style.backgroundColor = color;
-	  elmnt.style.fontWeight = font;
-	}
+	  		// Add the specific color to the button used to open the tab content
+	  		elmnt.style.backgroundColor = color;
+	  		elmnt.style.fontWeight = font;
+		}
 
 	// Get the element with id="defaultOpen" and click on it
 	document.getElementById("defaultOpen").click();
+
+	var email_btn_node = document.getElementById("email_btn");
+	var phone_btn_node = document.getElementById("phone_btn");
+
+	function email_show() {
+		email_btn_node.innerHTML = "aliabediweb@outlook.com";
+	}
+
+	function phone_show() {
+		phone_btn_node.innerHTML = "(313) 953-4383";
+	}
 		
 	</script>
 

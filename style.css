@@ -16,7 +16,7 @@ body {
 
 #header {
 	height: 4%;
-	padding-left: 50px;
+	padding-left: 10%;
 	padding-top: 30px;
 	background-image: linear-gradient(to right, #402759, black);
 	color: #E4DCf1;
@@ -27,7 +27,7 @@ body {
 
 #header_2 {
 	height: 0.5%;
-	padding-left: 50px;
+	padding-left: 10%;
 	padding-top: 30px;
 	background-image: linear-gradient(to right, #402759, black);
 	color: #E4DCf1;
@@ -38,7 +38,7 @@ body {
 
 #header_3 {
 	height: 4%;
-	padding-left: 50px;
+	padding-left: 10%;
 	padding-top: 30px;
 	padding-bottom: 10px;
 	background-image: linear-gradient(to right, #402759, black);
@@ -90,12 +90,13 @@ li {
 	justify-content: space-between;
 }
 
-.tablink {
+.tablink, .tablink:visited {
 	width: 30%;
 	flex-grow: 1;
   	background-color: transparent;
   	color: #E4DCf1;
-  	letter-spacing: 2px;
+  	letter-spacing: 3px;
+  	font-size: 15px;
   	float: left;
 	padding: 15px 0px;
   	border: none;
@@ -103,8 +104,8 @@ li {
   	cursor: pointer;
 }
 
-.tablink:hover, .tablink:active {
-	font-weight: bold;
+.tablink:hover{
+	opacity: 0.7;
 }
 
 .tabcontent {
@@ -189,14 +190,7 @@ hr.portfolio_div {
 	margin-top: 50px;
 }
 
-/* If the screen size is 601px wide or more, large font for menu text */
-@media screen and (min-width: 801px) {
-  .tablink {
-    font-size: 15px;
-  }
-}
-
-/* If the screen size is 600px wide or less, small text for meun text */
+/* If the screen size is 800px wide or less, small text for menu text */
 @media screen and (max-width: 800px) {
   .tablink {
     font-size: 10px;
